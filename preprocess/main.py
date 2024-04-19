@@ -39,6 +39,7 @@ if __name__ == "__main__":
     print(f"Number of columns: {columns}")
 
     # Save DataFrame to CSV file
-    output_csv_path = '/home/grisel/Documents/internship/venv/scrips/project/result_dataframe.csv'
+    output_csv_path = '/home/grisel/Documents/internship/venv/scrips/project/result_dataframe.csv' 
+    #Ensure that the csv will be downloaded as a csv file
     result_dataframe.to_csv(output_csv_path, index=False)
     print(f"DataFrame saved to {output_csv_path}")
