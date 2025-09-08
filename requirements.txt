@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+spacy
+mlxtend
+PyPDF2
+tqdm
+datasets
+transformers
+scipy
