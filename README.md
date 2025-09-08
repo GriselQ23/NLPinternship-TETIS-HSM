@@ -27,20 +27,23 @@ Our aim is not only to understand these changes but also to improve the methods 
    - Segments were manually labeled by experts into three categories: non-relevant, potentially relevant, and definitively relevant 🏷️.
    - Iterative expert review improved labeling accuracy and consistency 👩‍🔬👨‍🔬.
 
-4. **Classification**:
-   - Supervised machine learning models (SVM, BERT/RoBERTa) were trained to classify segments, using TF-IDF for feature extraction and grid search for hyperparameter optimization 🤖.
-   - Evaluation metrics included accuracy, precision, recall, and F1-score, with a focus on maximizing recall to capture all relevant information 📊.
+4. **Classification and Extraction**:
+   - After segmentation and segment extraction, we use BERT for classification 🤖 and Named Entity Recognition (NER) for extracting important data such as geo-localization, numeric values, geo positions, and more 🌍🔢📍.
+   - Supervised machine learning models (SVM, BERT/RoBERTa) are trained to classify segments, using TF-IDF for feature extraction and grid search for hyperparameter optimization 🤖.
+   - Evaluation metrics include accuracy, precision, recall, and F1-score, with a focus on maximizing recall to capture all relevant information 📊.
 
 5. **Information Extraction**:
-   - Named Entity Recognition (NER) was performed using SpaCy, Regex, and EntityRuler to extract quantitative and qualitative entities (measurements, dates, locations, land cover terms, change processes) 🔍.
+   - Named Entity Recognition (NER) is performed using SpaCy, Regex, and EntityRuler to extract quantitative and qualitative entities (measurements, dates, locations, land cover terms, change processes) 🔍.
 
-## Technologies Used
+## Technologies and Libraries Used
 
 - **Natural Language Processing (NLP)**: SpaCy, Regex, GROBID 🧠
 - **Machine Learning**: scikit-learn (SVM), HuggingFace Transformers (BERT, RoBERTa) 🤖
 - **Data Processing**: pandas, numpy, PyPDF2 📊
 - **Visualization and Analysis**: matplotlib, seaborn 📈
 - **Entity Extraction**: SpaCy NER, custom vocabularies 🔎
+- **mlxtend**: Frequent pattern mining
+- **tqdm**: Progress bars
 
 ## Project Structure and Purpose
 
